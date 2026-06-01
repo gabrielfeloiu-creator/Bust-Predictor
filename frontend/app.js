@@ -8,7 +8,7 @@ let allPlayers = [];
 // or the fetch fails, logs the error so debugging isn't a nightmare.
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('http://localhost:5000/api/players');
+        const response = await fetch('/api/players');
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
