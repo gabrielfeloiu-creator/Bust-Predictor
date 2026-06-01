@@ -3,3 +3,4 @@ flask-cors
 pandas
 requests
 numpy
+gunicorn
