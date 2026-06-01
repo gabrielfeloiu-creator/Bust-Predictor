@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bust Predictor 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <h1>BUST<span>RADAR</span></h1>
+            <p class="subtitle">2026 Fantasy Football Risk Analyzer</p>
+            <p class=" subtitle disclaimer">
+                Scores are based on 2025 performance data. Offseason role changes, injuries, and team context are not reflected. Use as a guide, not a guarantee.
+            </p>
+        </div>
+    </header>
+
+    <div class="controls">
+        <input type="text" id="search-bar" placeholder="Search player...">
+        <select id="position-filter">
+            <option value="All">All Positions</option>
+            <option value="WR">WR</option>
+            <option value="RB">RB</option>
+            <option value="TE">TE</option>
+        </select>
+        <select id="sort-filter">
+            <option value="bust_score">Bust Score</option>
+            <option value="adp">ADP</option>
+            <option value="name">Name</option>
+        </select>
+    </div>
+    <div id="results-count"></div>
+    <div id="player-container"></div>
+
+    <script src="app.js" defer></script>
+    <footer>
+        Data sourced from <a href="https://www.pro-football-reference.com" target="_blank">Pro Football Reference</a>, 
+        <a href="https://www.fantasypros.com" target="_blank">FantasyPros</a> & 
+        <a href="https://fantasyfootballcalculator.com" target="_blank">Fantasy Football Calculator</a> · 2025 season stats
+    </footer>
+</body>
+</html>
